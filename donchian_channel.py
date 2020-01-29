@@ -29,7 +29,7 @@ def DchannelUpper(i):
         for j in range(i, -1, -1):
             x = max(array_high[j], x)
     else:
-        for j in range(i-1, i-20, -1):
+        for j in range(i, i-20, -1):
             x = max(array_high[j], x)
     return x
 
@@ -42,7 +42,7 @@ def DchannelLower(i):
         for j in range(i, -1, -1):
             x = min(array_low[j], x)
     else:
-        for j in range(i-1, i-20, -1):
+        for j in range(i, i-20, -1):
             x = min(array_low[j], x)
     return x
 
